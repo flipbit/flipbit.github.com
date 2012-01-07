@@ -1,24 +1,25 @@
+
 <h1><a href="/">flipbit.co.uk</a></h1>
 
-      		<p class="tag-line">
-                agile mvc, jquery and .net wizardry                
-                from flipbit.co.uk
-                 -
-                <script type="text/javascript" language="javascript">
-                    WriteEmail("contact me");					
-				</script>
-      		</p>
+<p class="tag-line">
+    agile mvc, jquery and .net wizardry                
+    from flipbit.co.uk
+        -
+    <script type="text/javascript" language="javascript">
+        WriteEmail("contact me");					
+	</script>
+</p>
 
-      		<ul class="menu">
-      			<li class="heading">Recent Posts</li>
-				{% for post in site.posts limit:5 %}
-					<li>
-						<a href="{{ post.url }}">{{ post.title_short }}</a> 
-					</li>
-				{% endfor %}
-			</ul>
+<dl>
+    <dt class="heading">Recent Posts</dt>
+	{% for post in site.posts limit:5 %}
+		<dd>
+			<a href="{{ post.url }}">{{ post.title_short }}</a> 
+		</dd>
+	{% endfor %}
+</dl>
 
-      		<ul class="menu">
-      			<li class="heading">Projects</li>
-      			<li>Micro printer</li>
-      		</ul>
+<dl>
+    <dt>Projects</dt>
+    <dd>Micro printer</dd>
+</dl>

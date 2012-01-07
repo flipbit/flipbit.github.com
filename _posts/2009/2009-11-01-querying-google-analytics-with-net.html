@@ -10,7 +10,8 @@ Google recently <a title="Google Analytics Rich Data Export API" href="http://co
 <p>
 Calling the API to get the most popular pages for the last day is trivial:
 </p>
-<pre name="code" class="csharp:nocontrols">/// <summary>
+{% highlight csharp %}
+/// <summary>
 /// The Google Analytics command line application.
 /// </summary>
 static class Program
@@ -25,7 +26,7 @@ static class Program
     Console.Write(new TextFormatter().Format(results));
   }
 }
-</pre>
+{% endhighlight %}
 <p>
 Using the text output formatter produces the following result:
 </p>

@@ -33,6 +33,58 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="content\css\bootstrap.min.css" />
+    <Content Include="content\css\flipbit.css" />
+    <Content Include="content\css\syntaxhighlighter.css" />
+    <Content Include="content\images\flipbit-logo-medium.png" />
+    <Content Include="content\images\flipbit-logo-small.png" />
+    <Content Include="content\images\home-page\annotation-screen-shot.jpg" />
+    <Content Include="content\images\home-page\hudson-screen-shot.jpg" />
+    <Content Include="content\images\home-page\micro-printer.jpg" />
+    <Content Include="content\images\home-page\red-uk-postbox.jpg" />
+    <Content Include="content\images\home-page\who-is-search.jpg" />
+    <Content Include="content\js\flipbit.js" />
+    <Content Include="content\js\shBrushCSharp.js" />
+    <Content Include="content\js\shCore.js" />
+    <Content Include="index.html" />
+    <Content Include="_includes\side-content.html" />
+    <Content Include="_layouts\base.html" />
+    <Content Include="_layouts\post.html" />
+    <Content Include="_posts\2008\2008-11-06-auto-starting-virtual-server-in-vmware.html" />
+    <Content Include="_posts\2008\2008-11-13-aspnet-mvc-retains-form-post-values.html" />
+    <Content Include="_posts\2008\2008-11-6-unit-testing-session-in-aspnet-mvc.html" />
+    <Content Include="_posts\2009\2009-03-13-representing-large-ad-and-bc-dates-in-c.html" />
+    <Content Include="_posts\2009\2009-03-17-jquery-image-annotation-plugin.html" />
+    <Content Include="_posts\2009\2009-03-9-virtual-members-and-null-object-pattern.html" />
+    <Content Include="_posts\2009\2009-04-2-image-annotation-plugin-updated.html" />
+    <Content Include="_posts\2009\2009-04-21-extensible-markdown-class-in-c.html" />
+    <Content Include="_posts\2009\2009-04-21-server-side-ajax-handler-for-image.html" />
+    <Content Include="_posts\2009\2009-06-13-querying-whois-server-data-with-c.html" />
+    <Content Include="_posts\2009\2009-06-16-unit-testing-internet-connected.html" />
+    <Content Include="_posts\2009\2009-06-17-simple-301-redirects-with-monorail.html" />
+    <Content Include="_posts\2009\2009-06-18-reinventing-tablet-pc.html" />
+    <Content Include="_posts\2009\2009-06-24-what-code-coverage-percentage-should.html" />
+    <Content Include="_posts\2009\2009-06-25-build-avatars-in-agile-teams.html" />
+    <Content Include="_posts\2009\2009-07-15-introducing-hudson-monitor.html" />
+    <Content Include="_posts\2009\2009-07-16-anemic-domain-models-vs-single.html" />
+    <Content Include="_posts\2009\2009-07-20-announcing-seo-grep.html" />
+    <Content Include="_posts\2009\2009-07-21-visual-studio-dark-theme.html" />
+    <Content Include="_posts\2009\2009-07-22-writing-iphone-sites-with-aspnet-mvc.html" />
+    <Content Include="_posts\2009\2009-07-28-searching-public-domain-uk-postcodes.html" />
+    <Content Include="_posts\2009\2009-09-22-building-microprinter.html" />
+    <Content Include="_posts\2009\2009-11-01-querying-google-analytics-with-net.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README" />
+    <None Include="_config.yml" />
+    <None Include="_posts\2007\2007-09-19-why-and-how-to-use-search-engine.markdown" />
+    <None Include="_posts\2007\2007-09-20-seo-registration-and-viral-methods.markdown" />
+    <None Include="_posts\2007\2007-10-11-seo-ppc-and-organic-search-methods.markdown" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_posts\2012\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

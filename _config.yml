@@ -4,7 +4,7 @@ server:      false
 server_port: 4000
 
 source:      .
-destination: /var/www/jekyll.flipbit.co.uk
+destination: /www/flipbit.co.uk
 plugins:     ./_plugins
 
 future:      true
