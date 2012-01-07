@@ -1,0 +1,123 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+a {
+	color: #0066FF;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1, h2, h3 {
+	color: #0066FF;
+	font-family: georgia,"Times New Roman",serif;
+	font-size: 18px;
+	font-weight: normal;
+    margin: 0;
+}
+h1 a {
+	background: transparent url("/content/images/flipbit-logo-medium.png") no-repeat;	
+	display: block;
+    height: 47px;
+    float: right;
+    overflow: hidden;
+    margin: 40px 0 0 0;
+    width: 99px;
+    text-indent: 1000px;
+}
+h2 {
+	border-top:5px solid #ddd;
+	border-bottom:1px solid #ddd;	
+	font-size: 24px;
+	padding: 10px 0 7px;
+}
+img {
+	border: none;
+}
+.center {
+	text-align: center;
+}
+.center img {
+	border:1px solid #CCCCCC !important;
+	padding:1px;
+}
+.clear {
+	clear: both;
+}
+.code {
+	background-color:#F4F4F4;
+	font-family:Consolas,"Courier New",Courier;
+	font-size:12px !important;
+	margin:20px 0;
+	padding:10px;
+}
+.column {
+	float: left;
+	padding-top: 60px;
+	width: 340px;
+}
+.column h3 {
+	
+}
+.content {
+	padding-left: 15px;
+	margin: 0 auto;
+	width: 940px;
+}
+.dp-highlighter {
+	border-right: solid 1px #E7E5DC;
+}
+.main-content {
+	border-left: dotted 1px #ccc;
+	float: right;
+	margin-top: 15px;
+	padding-left: 25px;
+	width: 680px;
+}
+.main-content p {
+	clear: left;
+	font-family: georgia,"Times New Roman",serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+.main-content .attrib,.main-content .date {
+	color:#666666;
+	font-size:14px;
+	margin:5px 0;
+}
+.menu {
+	clear: both;
+}
+.menu li {
+	list-style: none;
+	margin: 10px 0;
+}
+.menu a {
+	color: #4E8BE7;
+}
+.menu .heading {
+	margin: 15px 0 5px;
+}
+.sep {
+	border-top: solid 1px #ccc;
+    padding-top: 10px;
+}
+.side-content {	
+	display: absolute;
+	float: left;
+	font-family: georgia,"Times New Roman",serif;
+	left: 0px;
+	margin-top: 15px;
+	min-height: 700px;
+	padding-right: 25px;
+	width: 200px;
+	text-align: right;
+	top: 0px;
+}
+.tag-line {
+	color: #aaa;
+	float: right;
+	font-size: 18px;
+	margin: 30px 0;
+}

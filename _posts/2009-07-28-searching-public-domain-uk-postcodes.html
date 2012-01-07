@@ -1,0 +1,85 @@
+---
+layout: post
+title: Searching Public Domain UK Postcodes
+title_short: Searching Public Domain UK Postcodes
+pretty_date: Tuesday, 28 July 2009
+---
+<div class="downloader floatRight"><a href="http://www.flipbit.co.uk/downloads/mobile-safari-filter-for-asp-mvc.zip" title="Download the latest version of UK Postcode Finder Library for .NET">Download</a>
+<span>Released:<br/>
+26th July, 2009</span>
+</div>
+<p>
+Postcodes divide the United Kingdom into logical groups for addresses, averaging <a href-"http://en.wikipedia.org/wiki/Postal_codes_in_the_United_Kingdom" title="Postal codes in the United Kingdom">15 properties per postcode</a>.  Postcodes have rough latitude and longitude coordinates associated with them, which makes them useful for location aware applications such as tracking and social networking.  Unfortunatley the Postcode Address File (PAF) is owned by the Royal Mail, who charge for access and generate revenues of <a title="Free out data: Web developers working to make postcode data freely available" href="http://www.guardian.co.uk/technology/2009/jul/22/free-our-data">&pound;14.9m every year</a>.
+</p>
+<p class="center screens">
+<img title="Postbox by asplosh" alt="Postbox" src="http://www.flipbit.co.uk/images/blog/uk-post-box.jpg" />
+<span class="attrib">
+Postbox by <a title="Postbox on Flick by Asplosh" href="http://www.flickr.com/photos/asplosh/218662108/">asplosh</a>.
+</span>
+</p>
+<p>
+Enter the new service <a title="Ernest Marples' Postcode Latitude/Longitude Coordinates Lookup API" href="http://ernestmarples.com/">Ernest Marples</a> (named after the <a title="Ernest Marples - Wikipedia" href="http://en.wikipedia.org/wiki/Ernest_Marples">postmaster general</a> who invented the postcode) that aims to overcome this restriction by offering the public a postcode API free of charge.  Operating in a legal grey area, they don't host or cache the information (it is derived from undisclosed sources) but offer a public API to access it.
+</p>
+<p>
+Of course, alternatives do exist.  <a href="http://www.freeourdata.org.uk/blog/?p=73" title="In the Guardian: people are doing it for themselves">Numerous services</a> offer public domain postcodes - postcodes that have been submitted by members of the public using GPS devices.  The drawback of these public domain services is that they are largely incomplete, and the accuracy of each postcode is not guaranteed to be correct.
+</p>
+<h3>
+Free The Postcode
+</h3>
+<p>
+<a title="Free The Postcode! - Public Domain UK Postcodes" href="http://www.freethepostcode.org/">Free the postcode</a> operate a site that allows users to submit postcodes and their corresponding coordinates, as well as download the results collected so far (7557 at the time of writing).  If you feel like adding the database, it is made even easier with the introduction of an <a href="http://blog.johnmckerrell.com/ifreethepostcode/" title="iFreeThePostcode iPhone Application">iPhone application</a>.
+<br />
+</p>
+<h3>
+New Popular Edition Maps
+</h3>
+<p>
+Based upon out of copyright Ordnance Survey maps, <a title="New Popular Edition Maps - npemap.org.uk" href="http://www.npemap.org.uk/">New Popular Edition Maps</a> provide a web based interface to view the UK as it was 50 years ago.  In addition to this, it is also possible to submit the location of your postcode through the web interface.  This information is then available to download (43,887 postcodes at the time of writing) and use for your own purposes, as long as your not making a profit from them (see <a title="Tile Licence - npemap.org.uk" href="http://www.npemap.org.uk/tileLicence.html">the licence</a>)
+<br />
+</p>
+<h3>
+Locating Postboxes
+</h3>
+<p>
+Ever found yourself needing to post a letter but not know where the nearest postbox is?  This is a question that Matthew Somerville's <a href="http://www.dracos.co.uk/play/locating-postboxes/" title="Locating Postboxes - Dracos.co.uk">Locating Postboxes</a> service aims to answer.  Using data derived from a <a href="http://www.whatdotheyknow.com/request/location_of_every_post_box_that" title="Location of every post box that the Royal Mail Group operates - WhatDoTheyKnow">freedom of information request</a>, the service can look-up and find your nearest postbox.  A full list of all the available information (20,076 complete and partial postcodes so far) is available to download.
+<br />
+</p>
+<h3>
+Accessing Public Domain Postcodes
+</h3>
+<p>
+If you want to integrate postcode information into your .NET application, retrieving and parsing the information can be a pain.  Because of this I've written an <a title="Online UK Postcode Finder" href="http://www.flipbit.co.uk/online-postcode-finder.html">open source postcode library</a> that supports all the main providers and provides a simple interface for your to query.  The library also includes handy functions to validate and calculate the distance between two postcodes.
+</p>
+<pre name="code" class="csharp:nocontrols">namespace Flipbit.Postcodes
+{
+    /// &lt;summary&gt;
+    /// Postcode Library Demo Program
+    /// &lt;/summary&gt;
+    public class PostcodeDemo
+    {
+        /// &lt;summary&gt;
+        /// Gets or sets the ernest marples service.
+        /// &lt;/summary&gt;
+        public IPostcodeService ErnestMarplesService { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the free the postcode service.
+        /// &lt;/summary&gt;
+        public IPostcodeService FreeThePostcodeService { get; set; }
+
+        static void Main()
+        {
+            var buckinghamPalace = FreeThePostcodeService.Lookup("SW1A 1AA");
+            var downingStreet = ErnestMarplesService.Lookup("SW1 2AA");
+
+            var distance = new Distance(buckinghamPalace.Coordinates, 
+                                        downingStreet.Coordinates);
+
+            Console.WriteLine("Buckingham Palace to 10 Downing St:");
+            Console.WriteLine("{0} miles", distance.Miles);            
+        }
+    }
+}</pre>
+<p>
+You can see an <a title="Online UK Postcode Finder" href="http://www.flipbit.co.uk/online-postcode-finder.html">online demo</a> of the library, or <a href="http://www.flipbit.co.uk/downloads/uk-postcodes-net-library.zip" title="Download UK Postcode Finder .NET Library">download the source here</a>.
+</p>
