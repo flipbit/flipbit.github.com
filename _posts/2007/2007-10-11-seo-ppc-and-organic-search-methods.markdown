@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: base
 title: SEO - PPC and Organic Search methods
 title_short: SEO - PPC and Organic Search methods
 pretty_date: Thursday, 11 October 2007

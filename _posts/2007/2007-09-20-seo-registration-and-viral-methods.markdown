@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: base
 title: SEO - Registration and Viral methods
 title_short: SEO - Registration and Viral methods
 pretty_date: Thursday, 20 September 2007

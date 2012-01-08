@@ -4,11 +4,11 @@ title: Agile MVC, jQuery and .net Wizardry - flipbit.co.uk
 ---
 
 {% for post in site.posts limit:1 %}
-	<h2>{{post.title_short}}</h2>
-    <p class="date">
-    	{{ post.pretty_date }}
-	</p>
-	<div>
-		{{ post.content }}
-	</div>
+    <div class="page-header blog-post">
+	    <h2>
+            {{post.title_short}}
+            <small>{{ post.pretty_date }}</small>
+        </h2>
+    </div>
+    {{ post.content }}
 {% endfor %}

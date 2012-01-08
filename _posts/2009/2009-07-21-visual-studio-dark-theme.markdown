@@ -1,4 +1,10 @@
-<p>
+---
+layout: base
+title: Visual Studio Dark Theme - flipbit.co.uk
+title_short: Visual Studio Dark Theme
+pretty_date: 21st July 2009
+---
+
 I have never been much of a fan of changing the <a title="Visual Studio Programmer Themes Gallery" href="http://www.hanselman.com/blog/VisualStudioProgrammerThemesGallery.aspx">color schemes in Visual studio</a>, however whilst working on a Ruby on Rails site for a month or so, I came to enjoy using the <a title="e Text Editor" href="http://www.e-texteditor.com/">e editor's</a> cappuccino scheme.
 </p>
 <p>

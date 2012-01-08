@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: base
 title: Auto starting a virtual server in VMware Server 2.0
 title_short: Auto starting a virtual server in VMware Server 2.0
 pretty_date: Thursday, 6 November 2008

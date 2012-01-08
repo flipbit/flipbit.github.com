@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: base
 title: Search Engine Optimisation - Why? and How
 title_short: Search Engine Optimisation - Why? and How
 pretty_date: Wednesday, 19 September 2007

@@ -9,23 +9,48 @@
     
         <link rel="stylesheet" href="/content/css/bootstrap.min.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="/content/css/flipbit.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="/content/css/prettify.css" type="text/css" media="screen" />
+
+        <script type="text/javascript" src="/content/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/content/js/jquery.tablesorter.min.js"></script>
+        <script type="text/javascript" src="/content/js/flipbit.js"></script>
+        <script type="text/javascript" src="/content/js/prettify.js"></script>
 
     </head>
     <body>
 
         <div class="container">        
 
-            <div class="row">
-
-                <div class="span4">
-                    {% include side-content.html %}
-                </div>
-
-                <div class="span12">
-                    {{ content }}
-                </div>
-
+            <div class="page-header blog-header">
+                <h1>
+                    <a href="/">flip<span>bit</span></a>
+                    <small>Agile MVC, jQuery and .NET wizardry</small>
+                </h1>
             </div>
+
+            <section>
+
+                <div class="row">
+
+                    <div class="span4 side-content">
+                        {% include side-content.html %}
+                    </div>
+
+                    <div class="span12">
+                        {% if page.title_short %}
+                        <div class="page-header blog-post">
+                            <h2>
+                                {{page.title_short}}
+                                <small>{{ page.pretty_date }}</small>
+                            </h2>
+                        </div>
+                        {% endif %}
+                        {{ content }}
+                    </div>
+
+                </div>
+
+            </section>
 
         </div>
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: base
 title: Unit Testing Session in an ASP.NET MVC Controller
 title_short: Unit Testing Session in an ASP.NET MVC Controller
 pretty_date: Thursday, 6 November 2008

@@ -1,0 +1,33 @@
+---
+layout: base
+title: All Posts
+---
+
+<div class="page-header blog-post">
+    <h2>
+        All Posts
+    </h2>
+</div>
+
+<table class="bordered-table zebra-striped" id="allPosts">
+    <thead>
+        <tr>
+            <th class="green header">
+                Post
+            </th>
+            <th class="blue header headerSortDown"  style="width: 150px;">
+                Written
+            </th>
+        </tr>
+    </thead>
+{% for post in site.posts %}
+    <tr class="page-header blog-post">
+	    <td>
+            <a href="{{ post.url }}">{{post.title_short}}</a>
+        </td>
+        <td style="width: 150px; text-align: right;">
+            {{ post.pretty_date }}
+        </td>
+    </tr>
+{% endfor %}
+</table>
