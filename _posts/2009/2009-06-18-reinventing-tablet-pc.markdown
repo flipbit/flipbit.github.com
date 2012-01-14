@@ -26,7 +26,7 @@ of [building your own] [5], what's coming soon or out there already?
 
 <div class="center spaced no-border">
     <a href="http://www.axiotron.com/index.php?id=modbook" title="Axiotron Modbook" style="width: 400px;">
-        <img src="/content/images/blog/tablet-pc-modbook.jpg" alt="Axiotron Modbook" />
+        <img src="/content/images/blog/tablet-pc-Modbook.jpg" alt="Axiotron Modbook" />
     </a>
 </div>
 
