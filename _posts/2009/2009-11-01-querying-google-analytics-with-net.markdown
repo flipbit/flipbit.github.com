@@ -30,9 +30,8 @@ Calling the API to get the most popular pages for the last day is trivial:
 
 Using the text output formatter produces the following result:
 
-Google Analytics for 02 October 09
-
-<pre>Top Content for seogrep.com
+<pre>Google Analytics for 02 October 09
+Top Content for seogrep.com
 ===========================
     29 : /
     29 : /site/results
@@ -91,8 +90,6 @@ This would produce the following output (using the CSV formatter):
 "www.seogrep.com","1","20091031","Analysis of index.php - SEO grep"
 "www.seogrep.com","1","20091031","Analysis of lookbook.nu - SEO grep"
 "www.seogrep.com","1","20091031","Analysis of musical.nl - SEO grep"</pre>
-
-You can download the source code here or get a <a href="http://www.flipbit.co.uk/command-line-toolkit/google-analytics.html">console application</a>.
 
   [1]: http://code.google.com/apis/analytics/docs/gdata/gdataDeveloperGuide.html                                        "Google Analytics Rich Data Export API"
   [2]: http://www.google.com/analytics/                                                                                 "Google Analytics" 

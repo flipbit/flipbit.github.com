@@ -30,6 +30,7 @@ blockquote p
 }
 .center 
 {
+    padding: 15px 0;
     text-align: center;
 }
 .center a 
@@ -56,6 +57,29 @@ blockquote p
     -moz-box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
     box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
 }
+.footer, .footer a, .footer a:hover {
+    color: #ccc;
+    font-size: 12px;
+    padding: 50px 0;
+    text-align: center;
+}
+.footer a, .footer a:hover {
+    color: #aaa;
+}
+.no-border, .no-border a, .no-border a:hover 
+{
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.no-hover-border a:hover 
+{
+    border:1px solid #ddd;
+    -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow:0 1px 1px rgba(0, 0, 0, 0.075);
+}
 .side-content li
 {
     padding: 3px 0;
@@ -63,6 +87,10 @@ blockquote p
 .side-content p
 {
     padding-left: 5px;
+}
+.spaced
+{
+    margin: 10px 0;
 }
 .span12 li
 {

@@ -32,8 +32,8 @@ Examples of the weather and tube report.  I cycle to work most days, so the tube
     </a>
 </div>
 
-  [1]: http://bookcamp.pbworks.com/PaperCamp "PaperCamp Wiki"
-  [2]: http://microprinter.pbworks.com/ "Microprinting Wiki"
+  [1]: http://bookcamp.pbworks.com/PaperCamp                                    "PaperCamp Wiki"
+  [2]: http://microprinter.pbworks.com/                                         "Microprinting Wiki"
   [3]: http://berglondon.com/blog/2006/10/06/my-printer-my-social-letterbox/
-  [4]: http://tomtaylor.co.uk/projects/microprinter/ "Microprinting Project"
-  [5]: http://www.flipbit.co.uk/micro-printer.html "Microprinting Project on flipbit.co.uk"
+  [4]: http://tomtaylor.co.uk/projects/microprinter/                            "Microprinting Project"
+  [5]: /microprinting.html                                                      "Microprinting Project on flipbit.co.uk"

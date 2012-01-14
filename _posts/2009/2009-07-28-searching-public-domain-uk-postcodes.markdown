@@ -8,6 +8,7 @@ pretty_date: 28 July 2009
 <div class="alert-message block-message info">
     <p>
         <strong>Update:</strong> You can now download all UK postcode data from the <a href="http://www.ordnancesurvey.co.uk/oswebsite/products/os-opendata.html">Ordnance Survey</a>.
+        This page is for information only.
     </p>
 </div>
 
@@ -53,7 +54,10 @@ and partial postcodes so far) is available to download.
 
 ###Accessing Public Domain Postcodes
 
-If you want to integrate postcode information into your .NET application, retrieving and parsing the information can be a pain.  Because of this I've written an <a title="Online UK Postcode Finder" href="http://www.flipbit.co.uk/online-postcode-finder.html">open source postcode library</a> that supports all the main providers and provides a simple interface for your to query.  The library also includes handy functions to validate and calculate the distance between two postcodes.
+If you want to integrate postcode information into your .NET application, retrieving and parsing the information can be a 
+pain.  Because of this I've written an **Online UK Postcode Finder** *(no longer available)* that supports all the main 
+providers and provides a simple interface for your to query.  The library also includes handy functions to validate and 
+calculate the distance between two postcodes.
 
     namespace Flipbit.Postcodes
     {

@@ -18,7 +18,7 @@ Whilst working on a recent project I noticed that I was getting some traffic fro
 site used some pretty complex jQuery for user interaction - this didn't translate into a workable user experience for 
 mobile users.
 
-<div class="center">
+<div class="center spaced">
     <img title="The iPhone displaying a site with regular HTML"  alt="The iPhone displaying a site with regular HTML" src="/content/images/blog/normal-site-on-iphone.jpg" />
 </div>
 
