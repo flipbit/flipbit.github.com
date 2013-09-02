@@ -10,7 +10,7 @@ title: Microprinting - flipbit.co.uk
 </div>
 
 <div class="center">
-    <a href="http://www.flickr.com/photos/25796600@N02/3920216909/" title="Microprinter on Flickr" style="width: 500px;">
+    <a href="http://www.flickr.com/photos/25796600@N02/3920216909/" title="Microprinter on Flickr" style="width: 506px;">
         <img src="http://farm4.static.flickr.com/3529/3920216909_90d7b3f8e5.jpg" alt="Optional title" />
     </a>
 </div>
@@ -50,7 +50,7 @@ searching revealed that pin 1 is next to the corner with the dot in.  Using the 
 create a quick circuit, wiring in the chip was quite easy, although the finished article looks quite complicated:
 
 <div class="center">
-    <a href="http://www.flickr.com/photos/25796600@N02/3920214229/in/photostream/" title="Arduino on Flickr" style="width: 500px">
+    <a href="http://www.flickr.com/photos/25796600@N02/3920214229/in/photostream/" title="Arduino on Flickr" style="width: 506px">
 	    <img src="http://farm3.static.flickr.com/2480/3920214229_d122f3de76.jpg" alt="Arduino on Flickr" width="500" height="289" />
     </a>
 </div>
@@ -60,7 +60,7 @@ first one [this happened to] [12]).  Going back and checking the wires produced 
 was able to print my basic "Hello World" test program.
 
 <div class="center">
-    <a href="http://www.flickr.com/photos/25796600@N02/3920215311/in/photostream/" title="Connecting it up" style="width: 500px;">
+    <a href="http://www.flickr.com/photos/25796600@N02/3920215311/in/photostream/" title="Connecting it up" style="width: 506px;">
 	    <img src="http://farm3.static.flickr.com/2556/3920215311_6cfe2775bc.jpg" alt="Connecting it up" width="500" height="307" />
     </a>
 </div>
@@ -93,7 +93,7 @@ The printer calls this queue every minute and prints the contents.
 The Finished Result
 
 <div class="center">
-    <a href="http://www.flickr.com/photos/25796600@N02/3942168170/in/photostream/" title="Tube Status Report" style="width: 315px;">
+    <a href="http://www.flickr.com/photos/25796600@N02/3942168170/in/photostream/" title="Tube Status Report" style="width: 321px;">
         <img src="http://farm3.static.flickr.com/2676/3942168170_aaf7471f67.jpg" alt="Tube Status Report" width="315" height="500" />
     </a>
 </div>

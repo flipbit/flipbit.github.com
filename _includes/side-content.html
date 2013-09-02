@@ -1,43 +1,38 @@
+<div class="h1-container">
+    <h1>
+        <a href="/"><span class="glyphicon glyphicon-cog"></span></a>
+    </h1>
+</div>
 
-<h4>Hello</h4>
-<p>
-    My name is Chris and I'm a web developer based in London.
-</p>
-<ul class="media-grid no-hover-border">
-    <li>
-        <a>
-            <img src="/content/images/profile.jpg"  title="Surfing the web" alt="Surfing the web" width="195" height="110" />
-        </a>
-    </li>
-</ul>
-<p style="padding-left: 50px;">
-    <script type="text/javascript">WriteEmail('Email')</script> or <a href="https://github.com/flipbit">GitHub</a>
-</p>
+<div class="side-container">
+    <h4 class="clearfix">flipbit</h4>
+    <ul>
+        <li>
+            <a href="https://github.com/flipbit">GitHub</a>
+        </li>
+        <li>
+            <script type="text/javascript">WriteEmail('Email')</script>
+        </li>
+        <li>
+            <a href="/all-posts.html">All Posts</a>
+        </li>
+    </ul>
+</div>
 
-<h4>Projects</h4>
-<ul>
-    <li>
-        <a href="/microprinting.html">Microprinting</a>
-    </li>
-    <li>
-        <a href="https://github.com/flipbit/whois" title="A .NET Library for downloading WHOIS data written in C#">WHOIS.NET</a>
-    </li>
-    <li>
-        <a href="https://github.com/flipbit/jquery-image-annotate" title="An Image Annotation jQuery plugin">jQuery Image Annotation</a>
-    </li>
-    <li>
-        <a href="https://github.com/flipbit/jenkins.net" title="A .NET Library for accessing the Jenkins Continuous Integration server written in C#">Jenkins Monitor</a>
-    </li>
-</ul>
-
-<h4>Recent Posts</h4>
-<ul>
-	{% for post in site.posts limit:5 %}
-		<li>
-			<a href="{{ post.url }}">{{ post.title_short }}</a> 
-		</li>
-	{% endfor %}
-    <li>
-        <a href="/all-posts.html">All Posts</a>
-    </li>
-</ul>
+<div class="side-container">
+    <h4>Projects</h4>
+    <ul>
+        <li>
+            <a href="/microprinting.html">Microprinting</a>
+        </li>
+        <li>
+            <a href="https://github.com/flipbit/whois" title="A .NET Library for downloading WHOIS data written in C#">WHOIS.NET</a>
+        </li>
+        <li>
+            <a href="https://github.com/flipbit/jquery-image-annotate" title="An Image Annotation jQuery plugin">jQuery Image Annotation</a>
+        </li>
+        <li>
+            <a href="https://github.com/flipbit/jenkins.net" title="A .NET Library for accessing the Jenkins Continuous Integration server written in C#">Jenkins Monitor</a>
+        </li>
+    </ul>
+</div>

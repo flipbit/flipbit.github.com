@@ -22,7 +22,7 @@ the WHOIS server responsible for the domain's
 <acronym title="Top Level Domain">TLD</acronym>.
 
 <div class="center spaced">
-    <img src="/content/images/blog/whois-query-flow-diagram.jpg" alt="Whois Query Flow Diagram" />
+    <img src="/content/images/blog/whois-query-flow-diagram.png" alt="Whois Query Flow Diagram" />
 </div>
 
 First, you need to query *TLD*.whois-servers.net. This will get you the

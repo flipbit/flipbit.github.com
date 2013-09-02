@@ -4,8 +4,6 @@ function WriteEmail(text) {
 }
 
 $(function () {
-    $("#allPosts").tablesorter();
-
     $('pre').each(function () {
         if ($(this).children("code").length > 0) {
             $(this).addClass('prettyprint');

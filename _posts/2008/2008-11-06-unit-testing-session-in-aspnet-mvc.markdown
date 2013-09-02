@@ -15,23 +15,23 @@ credentials in session:
 
     using NUnit.Framework;
 
-        [TestFixture]
-        public class HomeControllerTest
+    [TestFixture]
+    public class HomeControllerTest
+    {
+        private HomeController controller;
+
+        [Test]
+        public void TestIndexAction()
         {
-            private HomeController controller;
+            controller = new HomeController();
 
-            [Test]
-            public void TestIndexAction()
-            {
-                controller = new HomeController();
+            // Display the homepage
+            controller.Index();
 
-                // Display the homepage
-                controller.Index();
-
-                // Verify the user object hasn't been set in session
-                Assert.IsNull(controller.ControllerContext.HttpContext.Session["user"]);
-            }
+            // Verify the user object hasn't been set in session
+            Assert.IsNull(controller.ControllerContext.HttpContext.Session["user"]);
         }
+    }
 
 When I can to run this test, it failed as the HttpContextSessionBase
 class hadn’t been instantiated. After googling this, [several][]
@@ -40,62 +40,62 @@ answer without manually Mocking or creating Fakes. Monorail conversely,
 has the solution is built into the framework:  
 
     [TestFixture]
-        class HomeControllerTest : BaseControllerTest
+    class HomeControllerTest : BaseControllerTest
+    {
+        private HomeController controller;
+
+        [SetUp]
+        public void SetUp()
         {
-            private HomeController controller;
+            controller = new HomeController();
 
-            [SetUp]
-            public void SetUp()
-            {
-                controller = new HomeController();
-
-                PrepareController(controller);
-            }
-
-            [Test]
-            public void TestIndexAction()
-            {
-                // Display homepage
-                controller.Index();
-
-                // Verify the user object hasn't been set in session
-                Assert.IsNull(controller.Context.Session["user"]);
-            }
+            PrepareController(controller);
         }
+
+        [Test]
+        public void TestIndexAction()
+        {
+            // Display homepage
+            controller.Index();
+
+            // Verify the user object hasn't been set in session
+            Assert.IsNull(controller.Context.Session["user"]);
+        }
+    }
 
 After further research, I came across the [MVC Contrib Project][] on
 Codeplex. Adding references to their testing assembly I was able to
 write the following:  
 
     using MvcContrib.TestHelper;
-        using NUnit.Framework;
+    using NUnit.Framework;
 
-        [TestFixture]
-        public class HomeControllerTest
+    [TestFixture]
+    public class HomeControllerTest
+    {
+        private HomeController controller;
+        private TestControllerBuilder builder;
+
+        [SetUp]
+        public void SetUp()
         {
-            private HomeController controller;
-            private TestControllerBuilder builder;
+            builder = new TestControllerBuilder();
 
-            [SetUp]
-            public void SetUp()
-            {
-                builder = new TestControllerBuilder();
+            controller = new HomeController();
 
-                controller = new HomeController();
-
-                builder.InitializeController(controller);
-            }
-
-            [Test]
-            public void TestIndexAction()
-            {
-                // Display the homepage
-                controller.Index();
-
-                // Verify the user object hasn't been set in session
-                Assert.IsNull(controller.ControllerContext.HttpContext.Session["user"]);
-            }
+            builder.InitializeController(controller);
         }
+
+        [Test]
+        public void TestIndexAction()
+        {
+            // Display the homepage
+            controller.Index();
+
+            // Verify the user object hasn't been set in session
+            Assert.IsNull(controller.ControllerContext.HttpContext.Session["user"]);
+        }
+    }
 
 In order to run it requires a reference to [Rhino.Mocks][], so I guess
 under the hood this is what it’s using.  

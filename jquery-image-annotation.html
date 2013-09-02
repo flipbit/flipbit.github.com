@@ -1,5 +1,4 @@
 ---
-
 title: Agile MVC, jQuery and .net Wizardry - flipbit.co.uk
 ---
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -19,54 +18,48 @@ title: Agile MVC, jQuery and .net Wizardry - flipbit.co.uk
         <script type="text/javascript" src="/content/js/jquery-ui-1.7.1.js"></script>
         <script type="text/javascript" src="/content/js/jquery.annotate.js"></script>
         <script type="text/javascript" src="/content/js/flipbit.js"></script>
-        <script type="text/javascript" src="/content/js/prettify.js"></script>
 
     </head>
     <body>
 
         <div class="container">        
 
-            <div class="page-header blog-header">
-                <h1>
-                    <a href="/">flip<span>bit</span></a>
-                    <small>Agile MVC, jQuery and .NET wizardry</small>
-                </h1>
-            </div>
+            <div class="row">
 
-            <section>
+                <div class="col-md-3">
+                    {% include side-content.html %}
+                </div>
 
-                <div class="row">
-
-                    <div class="span4 side-content">
-                        {% include side-content.html %}
+                <div class="col-md-9 main-content">
+                    <div class="page-header blog-post">
+                        <h2>
+                            jQuery Image Annotation                                
+                        </h2>
                     </div>
-
-                    <div class="span12">                        
-                        <div class="page-header blog-post">
-                            <h2>
-                                jQuery Image Annotation                                
-                            </h2>
-                        </div>
-                        
-                        <p>
-                            A jQuery plugin to enable you to embed Flickr-like annotations on images.
-                            <a href="https://github.com/flipbit/jquery-image-annotate" title="An Image Annotation jQuery plugin">Full source</a> available.
-                        </p>
+                    
+                    <p>
+                        A jQuery plugin to enable you to embed Flickr-like annotations on images.
+                    </p>
+                    <p>
+                        <a href="https://github.com/flipbit/jquery-image-annotate" title="An Image Annotation jQuery plugin">Full source</a> available.
+                    </p>
 
 
-                        <div>
-                            <img id="toAnnotate" src="/content/images/trafalgar-square-annotated.jpg" alt="Trafalgar Square" width="600" height="398" />
-                        </div>
-
+                    <div>
+                        <img id="toAnnotate" src="/content/images/trafalgar-square-annotated.jpg" alt="Trafalgar Square" width="600" height="398" />
                     </div>
 
                 </div>
 
-            </section>
+            </div>
 
-            <div class="footer">
+            <div class="row">
 
-                Written with <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>.  Hosted by <a href="https://github.com/">GitHub</a>.  flipbit.co.uk 2012.
+                <div class="col-md-12 footer">
+                    Written with <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>.  
+                    Hosted by <a href="https://github.com/">GitHub</a>.  
+                    flipbit.co.uk 2013
+                </div>
 
             </div>
 
