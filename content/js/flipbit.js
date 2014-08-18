@@ -12,5 +12,7 @@ $(function () {
         }
     });
 
-    prettyPrint();
+    if (window.prettyPrint) {
+        prettyPrint();
+    }
 }); 
