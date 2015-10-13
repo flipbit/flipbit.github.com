@@ -1,88 +1,152 @@
-.bare {
-    padding-top: 50px;
+
+html, body {
+    height: 100%;
 }
 
-.footer div {
-    color: #ccc;
-    margin-bottom: 100px;
+.container-dark {
+    background-color: #F4F4F4;
+    margin-top: 30px;
+    padding: 50px 0;
 }
-.footer div a {
-    color: #aaa;
-    text-decoration: none;    
+
+.container-dark hr {
+    background-color: rgb(35, 131, 214);
+    height: 5px;
+    margin: 10px 0 25px 0;
+    width: 80px;
 }
-.footer div a:hover {
-    text-decoration: underline;    
+.container-dark p {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 18px;
 }
-.headline h1 {
-    font: 400 60px/60px 'Open Sans';
-    margin-bottom: 30px;
-    text-align: center;
-    text-transform: lowercase;
+
+.footer {
+    color: #999;
+    margin: 100px 0 50px;
 }
-.headline h1 strong {
-    font: 800 60px/60px 'Open Sans';
+.footer a {
+    color: #666;
 }
-.headline h1 em {
-    color: #ccc; 
-    font: 400 60px/60px 'gentium book basic';
+
+.megatron {
+    background: linear-gradient(rgba(35, 131, 214, 0.5), rgba(35, 131, 214, 0.5)), url(/content/images/back-large.jpg);
+    background-size: cover;
+    color: #fff;
+    height: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.megatron .container-blurb {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 30px;
+    position: absolute;
+}
+
+.megatron .container-blurb img {
+    width: 64px;
+}
+
+.megatron h1, h2, h3 {
+    font-family: "clavo", "serif";
+}
+
+.megatron h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.megatron h2 {
+    font-size: 56px;
     font-style: italic;
 }
-.headline h2 {
-    border-top: solid 1px #000; 
-    padding-bottom: 0;
-    text-align: center;
-}
-.headline h2 span {
-    background: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    padding: 0 20px;
-    position: relative;
-    text-transform: uppercase;
-    top: -40px;
-}
-.headline p {
-    font: 400 24px/24px 'gentium book basic';
-    line-height: 36px;
-    margin-top: -40px;
+
+.mugshot {
+    border-radius: 50%;
+    width: 200px;
 }
 
-.links {
-    list-style: none;
-    padding: 30px 0 0;
-}
-.links li {
-    display: inline;
-    list-style: none;
-    margin-right: 25px;
-}
-.links li a {
-    display: inline-block;
-    text-decoration: none;
-}
-.links li a span {
-    left: 2px;
-    position: relative;
-    top: -3px;
-}
-
-.projects {
+.row-header {
+    margin-top: 50px;
     margin-bottom: 30px;
 }
-.projects h3 {
-    font: 700 24px/24px 'gentium book basic';    
+.row-header h2 {
+    font-size: 38px;
+    margin: 0;
 }
-.projects p {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 28px;    
+.row-header h2 a {
+    color: #999;
+    float: right; 
 }
-.projects .thumbnail {
-    margin: 10px auto;
+.row-header h2 a:after {
+    background-image: url(/content/images/icons/up.svg);
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    float: right;
+    height: 32px;
+    opacity: 0.4;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 32px;
 }
 
-h2 {
-    font: 700 36px/36px 'gentium book basic';
-    padding: 20px 0;
-    margin-top: 0;
+.row-links {
+    display: table;
+    margin: 0 auto 30px;
+    list-style: none;
+}
+
+.row-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.row-links li {
+    display: inline;
+    padding: 0 50px;
+}
+.row-links img {
+   opacity: 0.3;
+   width: 80px;
+}
+.row-links img.github {
+   width: 90px;
+}
+.row-links img.strava {
+   width: 70px;
+}
+.row-links img:hover {
+   opacity: 0.6;
+}
+
+.row-projects {
+    margin-bottom: 40px;
+}
+.row-projects p {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 18px;
+    padding: 0 15px;
+}
+.row-projects .thumb {
+    border-radius: 0;
+    height: 146px;
+    margin: 0 auto;
+    width: 320px;
+}
+.row-projects h3 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.row-title hr {
+    background-color: rgb(35, 131, 214);
+    height: 5px;
+    width: 80px;
 }

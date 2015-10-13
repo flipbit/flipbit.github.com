@@ -1,13 +1,8 @@
 ---
 layout: base
 title: Microprinting - flipbit.co.uk
+title_short: Microprinting
 ---
-
-<div class="page-header">
-    <h2>
-        Microprinting
-    </h2>
-</div>
 
 <div class="center">
     <a href="http://www.flickr.com/photos/25796600@N02/3920216909/" title="Microprinter on Flickr" style="width: 506px;">

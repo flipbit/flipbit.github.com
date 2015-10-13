@@ -12,47 +12,41 @@
         <link rel="stylesheet" href="/content/css/prettify.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="/content/css/flipbit.css" type="text/css" media="screen" />
 
-        <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-
         <script type="text/javascript" src="/content/js/jquery.min.js"></script>
         <script type="text/javascript" src="/content/js/prettify.js"></script>
         <script type="text/javascript" src="/content/js/flipbit.js"></script>
+
+        <script src="https://use.typekit.net/yoi2epn.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     </head>
     <body>
 
         <div class="container">        
 
+            {% if page.title_short %}
+            <div class="row row-header">
+                <div class="col-md-12">
+                    <h2>
+                        {{page.title_short}}
+                        <a href="/">
+                            Home
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            {% endif %}
+
             <div class="row">
 
-                <div class="col-md-3">
-                    {% include side-content.html %}
-                </div>
-
-                <div class="col-md-9 main-content">
-                    {% if page.title_short %}
-                    <div class="page-header blog-post">
-                        <h2>
-                            {{page.title_short}}
-                            <small>{{ page.pretty_date }}</small>
-                        </h2>
-                    </div>
-                    {% endif %}
+                <div class="col-md-12">
                     {{ content }}
                 </div>
 
             </div>
 
-            <div class="row">
-
-                <div class="col-md-12 footer">
-                    Written with <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>.  
-                    Hosted by <a href="https://github.com/">GitHub</a>.  
-                    flipbit.co.uk 2013
-                </div>
-
-            </div>
-
+            {% include footer.html %}
+           
         </div>
 
         <script>
