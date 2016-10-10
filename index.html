@@ -3,6 +3,135 @@ layout: bare
 title: Agile MVC, jQuery and .net Wizardry - flipbit.co.uk
 ---
 
+<div class="container container-bump">
+    <div class="row">
+        {% include side-content.html %}
+        <div class="col-md-10 col-light">
+            <div class="container-fluid container-padless">
+                <div class="row">
+                    <div class="col-md-6 col-list">
+                        <h2>Projects</h2>
+                        <hr />
+
+                        <!-- Nascent -->
+                        <div class="blurb blurb-nascent">
+                            <a href="https://nascentfit.com/">
+                                <h3>Nascent</h3>
+                                <p>A dynamic training system for cyclists and runners</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-list">
+                        <h2>Open Source</h2>
+                        <hr />
+
+                        <!-- Oculus Reparo -->
+                        <div class="blurb blurb-oculus">
+                            <a href="https://github.com/flipbit/oculus-reparo-swifty">
+                                <h3>Oculus Reparo</h3>
+                                <p>A Swift UIKit layout manager for iOS</p>
+                            </a>
+                        </div>
+
+                        <!-- jQuery Image Annotation -->
+                        <div class="blurb blurb-annotation">
+                            <a href="/jquery-image-annotation.html">
+                                <h3>jQuery Image Annotation</h3>
+                                <p>Simple jQuery plugin to create image annotations</p>
+                            </a>
+                        </div>
+
+                        <!-- WHOIS -->
+                        <div class="blurb blurb-whois">
+                            <a href="https://github.com/flipbit/whois">
+                                <h3>.NET WHOIS</h3>
+                                <p>A C# library to directly query WHOIS servers</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-6 col-list col-fun">
+                        <h2>Fun</h2>
+                        <hr />
+
+                        <!-- Microprinter -->
+                        <div class="blurb blurb-microprinter">
+                            <a href="/microprinting.html">
+                                <h3>Microprinter</h3>
+                                <p>Recycling a till receipt printer into a life stream</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-double-bump">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-2 col-light col-list">
+            <h2>About</h2>
+            <hr />
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 col-md-offset-2 col-light text-center col-about">
+            <img src="/content/images/mugshot.jpg" alt="Mugshot" class="mugshot">
+        </div>
+        <div class="col-md-8 col-light col-list col-about">
+            <p>
+                I'm a full stack developer with over 13 years commercial experience developing apps and websites.
+            </p>
+            <p>
+                I like anything on two wheels, coffee, and dachshunds.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container container-double-bump">
+    <div class="row">
+        <div class="col-md-10 col-light col-list col-md-offset-2">
+            <h2>Contact</h2>
+            <hr />
+            <div class="text-center">
+                <ul class="link-list">
+                    <li>
+                        <a href="https://github.com/flipbit">
+                            <img src="/content/images/icons/octoface.svg" class="github" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/flipbit">
+                            <img src="/content/images/icons/linkedin.svg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:hello@flipbit.co.uk">
+                            <img src="/content/images/icons/email.svg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.strava.com/athletes/flipbit">
+                            <img src="/content/images/icons/strava.svg" class="strava" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}
+
+<!--
 <div class="megatron">
     <div class="container container-blurb">
 
@@ -11,7 +140,7 @@ title: Agile MVC, jQuery and .net Wizardry - flipbit.co.uk
             <div class="col-md-6">
 
                 <h1>
-                    Chris Wood
+                    Chris Wood!
                 </h1>
 
                 <h2>
@@ -30,7 +159,7 @@ title: Agile MVC, jQuery and .net Wizardry - flipbit.co.uk
 
         <div class="row">
             <div class="col-md-12 text-center">
-                <img src="/content/images/icons/down.svg" />
+                <a href="#" id="scroll-down"><img src="/content/images/icons/down.svg" /></a>
             </div> 
         </div>
 
@@ -38,7 +167,7 @@ title: Agile MVC, jQuery and .net Wizardry - flipbit.co.uk
 
 </div>
 
-<div class="container">
+<div class="container projects">
 
     <div class="row row-title">
         <div class="col-md-12 text-center">
@@ -47,55 +176,74 @@ title: Agile MVC, jQuery and .net Wizardry - flipbit.co.uk
         </div>
     </div>
 
-    <div class="row row-projects">
+    <div class="row">
 
         <div class="col-md-6">
 
-            <a href="https://nascent.io/" class="thumbnail thumb">
-                <img src="/content/images/home-page/nascent.jpg" alt="...">
-            </a>
-
             <h3>Nascent</h3>
 
+            <a href="https://nascentfit.com/">
+                <img src="/content/images/home-page/nascent.png" alt="...">
+            </a>
+
             <p>
-                Creating dynamic training plans for cyclist and runners
-                on <a href="https://nascent.io/">Nascent</a>
+                A dynamic training platform for cyclist and runners.
             </p>
+
+            <ul>
+                <li>
+                    <a href="https://nascentfit.com/" alt="Nascent" class="highlight-svg">
+                        <img src="/content/images/icons/globe.svg" class="svg" />
+                        Website
+                    </a>
+                </li>
+            </ul>
 
         </div>
 
         <div class="col-md-6">
 
-            <a href="https://github.com/flipbit/jquery-image-annotate" class="thumbnail thumb">
-                <img src="/content/images/home-page/annotation-screen-shot.jpg" alt="...">
-            </a>            
-
             <h3>jQuery Image Annotation</h3>
+
+            <a href="https://github.com/flipbit/jquery-image-annotate">
+                <img src="/content/images/home-page/annotation-screen-shot.png" alt="...">
+            </a>
 
             <p>
                 jQuery plugin to dynamically annotate images.
-                <br />
-                <a href="/jquery-image-annotation.html">On-line Demo</a> 
-                or
-                <a href="https://github.com/flipbit/jquery-image-annotate">Source on Github</a>
             </p>
+
+            <ul>
+                <li>
+                    <a href="/jquery-image-annotation.html" class="highlight-svg">
+                        <img src="/content/images/icons/globe.svg" class="svg" />
+                        On-line Demo
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/flipbit/jquery-image-annotate" class="highlight-svg code">
+                        <img src="/content/images/icons/code.svg" class="svg" />
+                        Source Code
+                    </a>
+                </li>
+            </ul>
 
         </div>
 
     </div>
 
-    <div class="row row-projects">
+    <div class="row">
 
         <div class="col-md-6">
 
-            <a href="/microprinting.html" class="thumbnail thumb">
-                <img src="/content/images/home-page/micro-printer.jpg" alt="...">
-            </a>
-
             <h3>Microprinter</h3>
 
+            <a href="/microprinting.html">
+                <img src="/content/images/home-page/micro-printer.png" alt="...">
+            </a>
+
             <p>
-                Experiments recycling an old till receipt printer into a life stream.                
+                .                
                 <a href="/microprinting.html">Project Details</a>
             </p>           
 
@@ -103,11 +251,11 @@ title: Agile MVC, jQuery and .net Wizardry - flipbit.co.uk
 
         <div class="col-md-6">
 
-            <a href="https://github.com/flipbit/whois" class="thumbnail thumb">
+            <h3>.NET WHOIS Client</h3>
+
+            <a href="https://github.com/flipbit/whois">
                 <img src="/content/images/home-page/who-is-search.jpg" alt="...">
             </a>            
-
-            <h3>.NET WHOIS Client</h3>
 
             <p>
                 A C# library to directly query WHOIS servers.
@@ -193,30 +341,9 @@ title: Agile MVC, jQuery and .net Wizardry - flipbit.co.uk
 
 
     <div class="row row-links">
-        <ul>
-            <li>
-                <a href="https://github.com/flipbit">
-                    <img src="/content/images/icons/octoface.svg" class="github" />
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/flipbit">
-                    <img src="/content/images/icons/linkedin.svg" />
-                </a>
-            </li>
-            <li>
-                <a href="mailto:hello@flipbit.co.uk">
-                    <img src="/content/images/icons/email.svg" />
-                </a>
-            </li>
-            <li>
-                <a href="http://www.strava.com/athletes/flipbit">
-                    <img src="/content/images/icons/strava.svg" class="strava" />
-                </a>
-            </li>
-        </ul>
     </div>
 
     {% include footer.html %}
 
 </div>
+-->

@@ -1,89 +1,56 @@
 ---
-title: Agile MVC, jQuery and .net Wizardry - flipbit.co.uk
+layout: bare
+title: jQuery Image Annotation Plugin - flipbit.co.uk
 ---
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="en" lang="en">
-    <head>
-    
-        <title>jQuery Image Annotation Plugin</title>
-    
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <meta http-equiv="content-language" content="en" />
-    
-        <link rel="stylesheet" href="/content/css/bootstrap.min.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="/content/css/flipbit.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="/content/css/annotation.css" type="text/css" media="screen" />
 
-        <script src="https://use.typekit.net/yoi2epn.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+<div class="container container-bump">
+    <div class="row">
 
-        <script type="text/javascript" src="/content/js/jquery-1.3.2.js"></script>
-        <script type="text/javascript" src="/content/js/jquery-ui-1.7.1.js"></script>
-        <script type="text/javascript" src="/content/js/jquery.annotate.js"></script>
-        <script type="text/javascript" src="/content/js/flipbit.js"></script>
+        {% include side-content.html %}
 
-    </head>
-    <body>
+        <div class="col-md-10 col-light col-list">
 
-        <div class="container">        
+            <h2>jQuery Image Annotation</h2>
+            <hr />
 
-            <div class="row row-header">
-                <div class="col-md-12">
-                    <h2>
-                        jQuery Image Annotation
-                        <a href="/">
-                            Home
-                        </a>
-                    </h2>
-                </div>
+            <p class="info-p">
+                A jQuery plugin to enable you to embed Flickr-like annotations on images.  <a href="https://github.com/flipbit/jquery-image-annotate" title="An Image Annotation jQuery plugin">Source code on Github</a>.
+            </p>
+
+            <div class="annotation">
+                <img id="toAnnotate" src="/content/images/trafalgar-square-annotated.jpg" alt="Trafalgar Square" width="600" height="398" />
             </div>
-
-            <div class="row">
-
-                <div class="col-md-12">
-                    
-                    <p>
-                        A jQuery plugin to enable you to embed Flickr-like annotations on images.
-                    </p>
-                    <p>
-                        <a href="https://github.com/flipbit/jquery-image-annotate" title="An Image Annotation jQuery plugin">Full source</a> available.
-                    </p>
-
-
-                    <div>
-                        <img id="toAnnotate" src="/content/images/trafalgar-square-annotated.jpg" alt="Trafalgar Square" width="600" height="398" />
-                    </div>
-
-                </div>
-
-            </div>
-
-            {% include footer.html %}
 
         </div>
 
-        <script language="javascript">
-            $(window).load(function() {
-                $("#toAnnotate").annotateImage({
-                    editable: true,
-                    useAjax: false,
-                    notes: [ { "top": 286,
-                               "left": 161,
-                               "width": 52,
-                               "height": 37,
-                               "text": "Small people on the steps",
-                               "id": "e69213d0-2eef-40fa-a04b-0ed998f9f1f5",
-                               "editable": false },
-                             { "top": 134,
-                               "left": 179,
-                               "width": 68,
-                               "height": 74,
-                               "text": "National Gallery Dome",
-                               "id": "e7f44ac5-bcf2-412d-b440-6dbb8b19ffbe",
-                               "editable": true } ]
-                });
-            });
-        </script>
+    </div>
+</div>
 
-    </body>
-</html>
+{% include footer.html %}
+
+<script type="text/javascript" src="/content/js/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="/content/js/jquery-ui-1.7.1.js"></script>
+<script type="text/javascript" src="/content/js/jquery.annotate.js"></script>
+
+<script language="javascript" defer="defer">
+    $(window).load(function() {
+        $("#toAnnotate").annotateImage({
+            editable: true,
+            useAjax: false,
+            notes: [ { "top": 286,
+                       "left": 161,
+                       "width": 52,
+                       "height": 37,
+                       "text": "Small people on the steps",
+                       "id": "e69213d0-2eef-40fa-a04b-0ed998f9f1f5",
+                       "editable": false },
+                     { "top": 134,
+                       "left": 179,
+                       "width": 68,
+                       "height": 74,
+                       "text": "National Gallery Dome",
+                       "id": "e7f44ac5-bcf2-412d-b440-6dbb8b19ffbe",
+                       "editable": true } ]
+        });
+    });
+</script>

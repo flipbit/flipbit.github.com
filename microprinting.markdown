@@ -4,7 +4,10 @@ title: Microprinting - flipbit.co.uk
 title_short: Microprinting
 ---
 
-<div class="center">
+<h2>Microprinting</h2>
+<hr />
+
+<div class="image-center">
     <a href="http://www.flickr.com/photos/25796600@N02/3920216909/" title="Microprinter on Flickr" style="width: 506px;">
         <img src="http://farm4.static.flickr.com/3529/3920216909_90d7b3f8e5.jpg" alt="Optional title" />
     </a>
@@ -17,7 +20,7 @@ The concept of [Microprinting] [1] as described by [Tom Taylor] [2] as:
         an experiment in physical activity streams and notification, using a repurposed receipt printer 
         connected to the web.
     </p>
-    <small>- Tom Taylor</small>
+    <small>Tom Taylor</small>
 </blockquote>
 
 Using this and the [works] [3] of [others] [4] as inspiration, I set about making my own Internet connected printer.
@@ -34,7 +37,10 @@ acquired everything I needed for the project:
 The serial output of the Arduino board isn't natively compatible with the printer - you need to run 
 the signal through the MAX233 chip to transform the output to the correct voltage.
 
-###Hooking Up The Printer
+Hooking Up The Printer
+----------------------
+
+<hr/>
 
 Before turning on the soldering iron and start connecting wires, it would be a good idea to study 
 the manuals for the [printer] [10] and [MAX233 chip] [11].  I did not and subsequently spent a couple 
@@ -44,7 +50,7 @@ The first thing I needed to find out was the numbering on the pins of the MAX233
 searching revealed that pin 1 is next to the corner with the dot in.  Using the bread board to 
 create a quick circuit, wiring in the chip was quite easy, although the finished article looks quite complicated:
 
-<div class="center">
+<div class="image-center">
     <a href="http://www.flickr.com/photos/25796600@N02/3920214229/in/photostream/" title="Arduino on Flickr" style="width: 506px">
 	    <img src="http://farm3.static.flickr.com/2480/3920214229_d122f3de76.jpg" alt="Arduino on Flickr" width="500" height="289" />
     </a>
@@ -54,7 +60,7 @@ After plugging in the board, the printer started to emit a constant stream of qu
 first one [this happened to] [12]).  Going back and checking the wires produced the desired result, and I 
 was able to print my basic "Hello World" test program.
 
-<div class="center">
+<div class="image-center">
     <a href="http://www.flickr.com/photos/25796600@N02/3920215311/in/photostream/" title="Connecting it up" style="width: 506px;">
 	    <img src="http://farm3.static.flickr.com/2556/3920215311_6cfe2775bc.jpg" alt="Connecting it up" width="500" height="307" />
     </a>
@@ -62,7 +68,7 @@ was able to print my basic "Hello World" test program.
 
 In order to help anyone else, I've made a completely non technical diagram of the circuit I'm using:
 
-<div class="center">
+<div class="image-center">
     <img src="/content/images/blog/max233-circuit-diagram.jpg" alt="MAX233 Circuit Diagram" width="401" height="398" />
 </div>
 
@@ -70,7 +76,10 @@ When connected to the laptop, the Arduino is powered through the USB cable.  In 
 the printer from the laptop, you can connect a power adapter directly to the Arduino board itself.  
 I'm using a spare iPhone power adapter and USB cable which seems to work quite well too.
 
-###Programming The Arduino
+Programming The Arduino
+-----------------------
+
+<hr/>
 
 Programming the Arduino is a simple matter of downloading the [open source IDE] [13] 
 and writing a <em>"sketch"</em> - a small program to run on the board independently of the connected computer.  
@@ -86,8 +95,11 @@ line programs append data to this text file to populate the queue withincoming s
 The printer calls this queue every minute and prints the contents.
 
 The Finished Result
+-------------------
 
-<div class="center">
+<hr/>
+
+<div class="image-center">
     <a href="http://www.flickr.com/photos/25796600@N02/3942168170/in/photostream/" title="Tube Status Report" style="width: 321px;">
         <img src="http://farm3.static.flickr.com/2676/3942168170_aaf7471f67.jpg" alt="Tube Status Report" width="315" height="500" />
     </a>
