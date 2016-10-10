@@ -26,6 +26,12 @@ html, body {
 
 .container-double-bump {
     margin-top: 30px;
+
+    @media screen and (max-width: 768px) {
+        h2 {
+            padding-top: 30px;
+        }
+    }
 }
 
 .container-padless {
@@ -45,6 +51,10 @@ html, body {
         &:first-child {
             margin-top: 30px;
         }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 15px;
     }
 }
 
@@ -72,6 +82,10 @@ html, body {
         font-weight: 100;
         font-style: normal;
         font-size: 30px;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
     }
 
     hr {
@@ -79,6 +93,10 @@ html, body {
         background-color: $light-blue-color;
         width: 50px;
         margin: 20px 0 0;
+
+        @media screen and (max-width: 768px) {
+            margin: 15px auto 0;
+        }
     }
 }
 
@@ -105,7 +123,20 @@ h1.title {
     background-image: url('/content/images/flipbit-logo.svg');
     background-size: cover;
     text-indent: -1000px;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 12px;
+        height: 45px;
+        width: 125px;
+    }
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        margin: 15px auto 0;
+    }
 }
+
+
 
 .blurb {
     a {
@@ -192,6 +223,11 @@ h1.title {
     padding: 0;
     margin: 15px auto 30px;
 
+    @media screen and (max-width: 768px) {
+        padding-bottom: 60px;
+    }
+
+
     li {
         display: inline;
         padding: 0 50px;
@@ -242,16 +278,28 @@ p.side, p.side-name, p.side-link {
     line-height: 26px;
     text-align: right;
     margin-right: 5px;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 p.side-name {
     font-weight: 700;
     margin-top: 30px;
     margin-bottom: 0;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 5px;
+    }
 }
 
 p.side-link {
     margin-top: 10px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+    }
 }
 
 /*
