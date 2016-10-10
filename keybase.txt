@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/flipbit
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://flipbit.co.uk
+  * I am flipbit (https://keybase.io/flipbit) on keybase.
+  * I have a public key with fingerprint 1CAC 1B1A EBA9 D210 9552  D9AD 4CD3 E667 5167 F4D0
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01019e86fc6c91ef5843143088c9672a66ed286965397ae3e36d53cf5c1898c9a1a10a",
+            "fingerprint": "1cac1b1aeba9d2109552d9ad4cd3e6675167f4d0",
+            "host": "keybase.io",
+            "key_id": "4cd3e6675167f4d0",
+            "kid": "01019e86fc6c91ef5843143088c9672a66ed286965397ae3e36d53cf5c1898c9a1a10a",
+            "uid": "e08c2cccc4de69708e4fc31173e18c19",
+            "username": "flipbit"
+        },
+        "service": {
+            "hostname": "flipbit.co.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1447928827,
+    "expire_in": 157680000,
+    "prev": "4bb91161579b13ec4ed74ee7e03678d3e770e21011201a7461b9388730474bca",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.49
+Comment: https://keybase.io/crypto
+
+yMImAnicrVJbSBVBGD5205TEgqzIpLabhOnO7p6dnVMUXehmFyK1QvGwO/Of46ad
+Pe7ZY14joivdb/ZgIBlkQT5kZaQgahFBFpQVFKcoiqILUaG9WNis1EPQY//LMP//
+fd98883cGjPckxjn9EyetL8J6uPudtVFPflrzg1UC4bFKgVftVACQwuUMog4/hKT
+CT5BRCIioKkBqlKCIODVFBkpsqhplKhY0lUVmKSpRPXKBOsgg6wyr0wDXoo0wjE6
+0pGoC5lCwAwFwQ7bZsjhsojqFBlIB0MnTEIi8XolRnSmUCaDqmIvUnFAYSInFlsR
+l8HNGXoEskyL9/jGP2TvH/j/7Ds6JAeiRiXKS2GgEixqoASojBCWAWkUERcYATuk
+bwWODpSaYcN0hNpMgTfLTQpuru5F/gZkUSsrWsK5YdtyLGqV8lGx44R9LtOpDLvQ
+bWD4f4v4DTPEeIycUA52xLRCgg9xJHVMVxUpCiaSpkk4U4CKsGmD33QRXqxqIi/3
+GCh3QzMMgpDKB8RAMlAFGFYAMIiyijUeKMYi8EdBSBKRjhUVGUTWNCyLClYM6qYS
+gbKQJfgUblMPcsmIGQzpTtQGoba7s3CEJy7RM2rkMPd7eRJHp/z5dMuU+MG81Ik9
+/RWxy1tKjzzY3le19PzrcQM53U5/qO/Cx3u9szMGYkZwVTatvV/wtfxih2dj7FFL
+eMOX3uKLyWtnPU1prbi07MlM66q0fWHV4MSgVbjad3r9gfep9GbRLra5bG7jrpq0
+z8cvNR2dmrCuo6bo9o28eKczVpd6rP3y9W97Dk5bPGFsb/6KEy+/Z0y/M/X4nNb2
++UvYkX1nYoe62sTUgwXXKuubfnyy97/27WhYoBz+wNrnN556/DM9+cWS2lEN7dN3
+O8dIwt6k6AyJ7WxLfpWx8srJh/PGv12UMe5hTmvulOEb0gP2poXNJCv6riQt97zY
+8fPZm+dn3yxoTkqxs/M+N69rWf4Lsc89yQ==
+=gmXy
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/flipbit
+
+==================================================================
